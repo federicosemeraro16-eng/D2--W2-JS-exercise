@@ -248,3 +248,13 @@ for (let i = 0; i < prodObj.length; i++){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+// const arrayToInvert = [1,2,3,4,5];
+// const arrayInverted = [];
+
+// for (let i = 4; i< arrayToInvert.length;i--){
+//    arrayInverted.push(arrayToInvert[i])
+// }
+
+// console.log(arrayInverted); -> SBAGLIATO LOOP INFINITO
+
