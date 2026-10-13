@@ -14,10 +14,10 @@ REGOLE
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const persona = {
-   nome: "Federico",
-   cognome: "Semeraro",
-   eta: 34,
-   citta: "Massafra",
+  nome: "Federico",
+  cognome: "Semeraro",
+  eta: 34,
+  citta: "Massafra",
 };
 
 console.log(`${persona.nome}, ${persona.eta} anni, vive a ${persona.citta}`);
@@ -43,13 +43,13 @@ console.log(persona);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const utente = {
-   nome: "Federico",
-   cognome: "Semeraro",
-   indirizzo: {
-      via: "Giacomo Trizzo,12",
-      citta: "Massafra",
-      cap: "74016",
-   },
+  nome: "Federico",
+  cognome: "Semeraro",
+  indirizzo: {
+    via: "Giacomo Trizzo,12",
+    citta: "Massafra",
+    cap: "74016",
+  },
 };
 
 console.log(utente.indirizzo.cap);
@@ -75,13 +75,13 @@ let num2 = 150;
 let num3 = 50;
 
 if (num1 > num2 && num1 > num3) {
-   console.log(num1);
+  console.log(num1);
 } else if (num2 > num3 && num2 > num1) {
-   console.log(num2);
+  console.log(num2);
 } else if (num2 === num3 && num2 === num1) {
-   console.log(`Pareggio`);
+  console.log(`Pareggio`);
 } else {
-   console.log(num3);
+  console.log(num3);
 }
 
 /* ESERCIZIO 6 — E-commerce: spedizione
@@ -97,16 +97,16 @@ let spedizione;
 let totaleFinale;
 
 if (totale >= 50) {
-   spedizione = 0;
+  spedizione = 0;
 } else {
-   spedizione = 9.9;
+  spedizione = 9.9;
 }
 
 totale = 35;
 totaleFinale = totale + spedizione;
 
 console.log(
-   `Totale carrello : ${totale} - Spedizione : ${spedizione} - Totale finale : ${totaleFinale}`,
+  `Totale carrello : ${totale} - Spedizione : ${spedizione} - Totale finale : ${totaleFinale}`,
 );
 
 /* ESERCIZIO 7 — typeof check
@@ -114,10 +114,10 @@ console.log(
    Con un for + if, per ogni elemento stampa 'x è un numero' o 'x non è un numero'.
 */
 
-const myArr = [18,'ciao',false];
+const myArr = [18, "ciao", false];
 
-for (let i =0; i< myArr.length; i++){
-   console.log(`${myArr[i]} è un ${typeof myArr[i]}`);
+for (let i = 0; i < myArr.length; i++) {
+  console.log(`${myArr[i]} è un ${typeof myArr[i]}`);
 }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -129,7 +129,7 @@ for (let i =0; i< myArr.length; i++){
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const myNumArr = [];
-myNumArr.push(1,2,3,4,5);
+myNumArr.push(1, 2, 3, 4, 5);
 myNumArr.unshift(0);
 console.log(myNumArr);
 console.log(myNumArr.length);
@@ -142,9 +142,9 @@ console.log(myNumArr.length);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const myCarr = ['Penna','Quaderno','Zaino','Astuccio'];
+const myCarr = ["Penna", "Quaderno", "Zaino", "Astuccio"];
 console.log(myCarr);
-myCarr.splice(1,1,'Diario');
+myCarr.splice(1, 1, "Diario");
 console.log(myCarr);
 /* ESERCIZIO 10 — Cerca un articolo
    Array prodotti = ['Penna', 'Quaderno', 'Zaino'].
@@ -155,15 +155,15 @@ console.log(myCarr);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const products = ['Penna','Quadro','Zaino']; // ne creo uno nuovo dato che il nome è diverso nella consegna //
-let found = products.includes('Zaino');
+const products = ["Penna", "Quadro", "Zaino"]; // ne creo uno nuovo dato che il nome è diverso nella consegna //
+let found = products.includes("Zaino");
 console.log(found);
-let indFound = products.indexOf('Zaino');
+let indFound = products.indexOf("Zaino");
 console.log(indFound);
-if (indFound >= 0){
-   console.log(indFound);
-} else{
-   console.log(`Non in carrello`);
+if (indFound >= 0) {
+  console.log(indFound);
+} else {
+  console.log(`Non in carrello`);
 }
 
 /* ESERCIZIO 11 — Lista utenti
@@ -175,22 +175,22 @@ if (indFound >= 0){
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const myUsers = [
-   {
-      nome : 'Federico',
-      eta : 34,
-   },
-   {
-      nome : 'Vincenzo',
-      eta : 29,
-   },
-   {
-      nome : 'Fabrizio',
-      eta : 18,
-   }
-]
+  {
+    nome: "Federico",
+    eta: 34,
+  },
+  {
+    nome: "Vincenzo",
+    eta: 29,
+  },
+  {
+    nome: "Fabrizio",
+    eta: 18,
+  },
+];
 
-for (let i=0; i < myUsers.length; i++){
-   console.log(`${myUsers[i].nome}(${myUsers[i].eta} anni)`);
+for (let i = 0; i < myUsers.length; i++) {
+  console.log(`${myUsers[i].nome}(${myUsers[i].eta} anni)`);
 }
 
 console.table(myUsers);
@@ -204,6 +204,39 @@ console.table(myUsers);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const prodObj = [
+  {
+    nome: "Iphone 12",
+    prezzo: 21,
+    disponibile: true,
+  },
+  {
+   nome: 'Samsung 12',
+   prezzo: 15,
+   disponibile : false,
+  },
+  {
+   nome:'Huawei P10',
+   prezzo : 9,
+   disponibile : true,
+  },
+  {
+   nome : 'Honor c430',
+   prezzo : 7,
+   disponibile : false,
+  }
+];
+
+for (let i = 0; i < prodObj.length; i++){
+   if (prodObj[i].disponibile === true && prodObj[i].prezzo < 10){
+      console.log(`OFFERTA: ${prodObj[i].nome} ${prodObj[i].prezzo} €`)
+   } else if ( prodObj[i].disponibile === true && prodObj[i].prezzo >= 10){
+      console.log( `${prodObj[i].nome} - prezzo : ${prodObj[i].prezzo} €`)
+   } else if (!prodObj[i].disponibile){
+      console.log(`${prodObj[i].nome} - Esaurito!`)
+   }
+}
 
 
 
