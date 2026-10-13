@@ -174,6 +174,27 @@ if (indFound >= 0){
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const myUsers = [
+   {
+      nome : 'Federico',
+      eta : 34,
+   },
+   {
+      nome : 'Vincenzo',
+      eta : 29,
+   },
+   {
+      nome : 'Fabrizio',
+      eta : 18,
+   }
+]
+
+for (let i=0; i < myUsers.length; i++){
+   console.log(`${myUsers[i].nome}(${myUsers[i].eta} anni)`);
+}
+
+console.table(myUsers);
+
 /* ESERCIZIO 12 — Inventario disponibili
    Array prodotti di 4 oggetti { nome, prezzo, disponibile }.
    Con for, per ogni prodotto:
@@ -183,6 +204,8 @@ if (indFound >= 0){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
 
 /* --EXTRA-- ESERCIZIO 13 — Reverse manuale
    Array [1, 2, 3, 4, 5].
